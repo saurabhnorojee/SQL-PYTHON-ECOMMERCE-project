@@ -33,12 +33,25 @@ I’m *Saurabh Norojee, a final-year Electrical Engineering student from **MANIT
 ---
 
 ## 📈 Sample Insights
+Calculate the number of orders per month in 2018.
+query = """ select monthname(order_purchase_timestamp) months, count(order_id) order_count
+from orders where year(order_purchase_timestamp) = 2018
+group by months
+"""
+
+cur.execute(query)
+
+data = cur.fetchall()
+df = pd.DataFrame(data, columns = ["months", "order_count"])
+o = ["January", "February","March","April","May","June","July","August","September","October"]
+
+ax = sns.barplot(x = df["months"],y =  df["order_count"], data = df, order = o, color = "red")
+plt.xticks(rotation = 45)
+ax.bar_label(ax.containers[0])
+plt.title("Count of Orders by Months is 2018")
+
+plt.show()
+
+<img width="580" height="505" alt="download" src="https://github.com/user-attachments/assets/8451d483-a620-41c8-9148-b6c7c683e219" />
 
 
-
----
-
-## 📸 Screenshots
-
-> (Add your screenshots here – like bar chart, pie chart, or table output)  
-Example:
