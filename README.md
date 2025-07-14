@@ -34,6 +34,7 @@ I’m *Saurabh Norojee, a final-year Electrical Engineering student from **MANIT
 
 ## 📈 Sample Insights
 Calculate the number of orders per month in 2018.
+
 query = """ select monthname(order_purchase_timestamp) months, count(order_id) order_count
 from orders where year(order_purchase_timestamp) = 2018
 group by months
