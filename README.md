@@ -55,4 +55,12 @@ plt.show()
 
 <img width="580" height="505" alt="download" src="https://github.com/user-attachments/assets/8451d483-a620-41c8-9148-b6c7c683e219" />
 
+## 💼 What I Learned
 
+-  Writing optimized SQL queries for real business data
+-  Data transformation using Pandas
+-  Visualizing insights with charts (bar, pie, line)
+-  Structuring data in relational models (normalization, keys)
+
+> 🔍 This project showcases practical data analytics using SQL and Python.
+> It simulates a real e-commerce scenario to derive business insights like revenue trends, product performance, and customer loyalty.
